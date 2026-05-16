@@ -18,9 +18,7 @@ export function chunkDescriptionLines(
 
     for (const line of lines) {
         const addition =
-            current.length === 0
-                ? line.length
-                : separator.length + line.length;
+            current.length === 0 ? line.length : separator.length + line.length;
         if (current.length > 0 && currentLength + addition > maxLength) {
             chunks.push(current);
             current = [line];
