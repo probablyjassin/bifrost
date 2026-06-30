@@ -6,7 +6,7 @@ services:
       args:
         GIT_COMMIT: abc1234
         APP_VERSION: 1.2.3
-    container_name: bifrost-test
+    container_name: bifrost
     restart: unless-stopped
     env_file:
       - .env
