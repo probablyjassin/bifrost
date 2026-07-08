@@ -3,6 +3,7 @@ name: Build and Publish Multi-Arch Docker Image
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 env:
   DOCKER_IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/bifrost
